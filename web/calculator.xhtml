@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="./templates/utama.xhtml">
+
+            <ui:define name="content">
+                <div class="post">
+                    <p class="date">Jun<b>03</b></p>
+                    <h2 class="title">Kalkulator Sederhana</h2>
+                    <p class="meta"><small>Posted <a href="#">freewordpressthemes</a> | <a href="#">Edit</a> Filed under <a href="#">WordPress</a>, <a href="#">Internet</a> | <a href="#">No Comments &raquo;</a></small></p>
+                    <div class="entry">
+                        
+                        <h:form>
+                            <h:inputText id="num1" size="4"></h:inputText>
+                            <h:outputText value=" + "/>
+                            <h:inputText id="num2" size="4"></h:inputText>
+                            <h:commandButton id="go" value="="></h:commandButton>
+                            <h:inputText id="hasil" size="4" disabled="true"/>
+                        </h:form>
+                        
+                    </div>
+                </div>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
