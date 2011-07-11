@@ -16,11 +16,11 @@
                     <div class="entry">
                         
                         <h:form>
-                            <h:inputText id="num1" size="4"></h:inputText>
+                            <h:inputText id="num1" size="4" value="#{kalkulator.num1}"></h:inputText>
                             <h:outputText value=" + "/>
-                            <h:inputText id="num2" size="4"></h:inputText>
-                            <h:commandButton id="go" value="="></h:commandButton>
-                            <h:inputText id="hasil" size="4" disabled="true"/>
+                            <h:inputText id="num2" size="4" value="#{kalkulator.num2}"></h:inputText>
+                            <h:commandButton id="go" value="=" action="#{kalkulator.hitung()}"></h:commandButton>
+                            <h:inputText id="hasil" size="4" value="#{kalkulator.hasil}" disabled="true"/>
                         </h:form>
                         
                     </div>
