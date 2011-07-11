@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="./../templates/utama.xhtml">
+
+            <ui:define name="content">
+                <div class="post">
+                    <p class="date">Jun<b>03</b></p>
+                    <h2 class="title">Daftar Kontak</h2>
+                    <p class="meta"><small>Posted <a href="#">freewordpressthemes</a> | <a href="#">Edit</a> Filed under <a href="#">WordPress</a>, <a href="#">Internet</a> | <a href="#">No Comments &raquo;</a></small></p>
+                    <div class="entry">
+                        
+                        <h:form>
+                            <h:panelGrid columns="3">
+                                <h:outputLabel for="cari"></h:outputLabel>
+                                <h:inputText id="cari"></h:inputText>
+                                <h:commandButton value="Go"></h:commandButton>
+                            </h:panelGrid>
+                            
+                            <br/>
+                            
+                            <h:commandButton value="New Contact" action="form"></h:commandButton>
+                            
+                            <h:panelGrid columns="5" border="1">
+                                <h:outputText value="Nama" />
+                                <h:outputText value="Email" />
+                                <h:outputText value="Mobile" />
+                                <h:outputText value="" />
+                                <h:outputText value="" />
+                                
+                                <h:outputText value="Endy Muhardin" />
+                                <h:outputText value="endy.muhardin@gmail.com" />
+                                <h:outputText value="1234567890" />
+                                <h:outputLink>edit</h:outputLink>
+                                <h:outputLink>delete</h:outputLink>
+                                
+                                <h:outputText value="Endy Muhardin" />
+                                <h:outputText value="endy.muhardin@gmail.com" />
+                                <h:outputText value="1234567890" />
+                                <h:outputLink>edit</h:outputLink>
+                                <h:outputLink>delete</h:outputLink>
+                                
+                                <h:outputText value="Endy Muhardin" />
+                                <h:outputText value="endy.muhardin@gmail.com" />
+                                <h:outputText value="1234567890" />
+                                <h:outputLink>edit</h:outputLink>
+                                <h:outputLink>delete</h:outputLink>
+                                
+                                <h:outputText value="Endy Muhardin" />
+                                <h:outputText value="endy.muhardin@gmail.com" />
+                                <h:outputText value="1234567890" />
+                                <h:outputLink>edit</h:outputLink>
+                                <h:outputLink>delete</h:outputLink>
+                            </h:panelGrid>
+                        </h:form>
+                        
+                    </div>
+                </div>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

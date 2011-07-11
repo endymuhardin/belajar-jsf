@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <body>
+
+        <ui:composition template="./../templates/utama.xhtml">
+
+            <ui:define name="content">
+                <div class="post">
+                    <p class="date">Jun<b>03</b></p>
+                    <h2 class="title">Entri Kontak</h2>
+                    <p class="meta"><small>Posted <a href="#">freewordpressthemes</a> | <a href="#">Edit</a> Filed under <a href="#">WordPress</a>, <a href="#">Internet</a> | <a href="#">No Comments &raquo;</a></small></p>
+                    <div class="entry">
+
+                        <h:form>
+                            <h:panelGrid columns="3">
+                                <h:outputLabel for="nama" value="Nama"></h:outputLabel>
+                                <h:inputText id="nama" 
+                                             required="true" 
+                                             requiredMessage="harus diisi bos" 
+                                             ></h:inputText>
+                                <h:message for="nama"></h:message>
+
+                                <h:outputLabel for="email" value="Email"></h:outputLabel>
+                                <h:inputText id="email" 
+                                             required="false" 
+                                             requiredMessage="harus diisi bos" 
+                                             ></h:inputText>
+                                <h:message for="email"></h:message>
+
+                                <h:outputLabel for="mobile" value="Mobile"></h:outputLabel>
+                                <h:inputText id="mobile"></h:inputText>
+                                <h:message for="mobile"></h:message>
+
+                                <h:outputLabel for="office" value="Office"></h:outputLabel>
+                                <h:inputText id="office"></h:inputText>
+                                <h:message for="office"></h:message>
+
+                                <h:outputText value=""/>
+                                <h:panelGroup>
+                                    <h:panelGrid columns="2">
+                                        <h:commandButton value="Save Contact" action="list"></h:commandButton>
+                                        <h:commandButton value="Reset" type="reset" />
+                                    </h:panelGrid>
+                                </h:panelGroup>
+                                <h:outputText value=""/>
+                            </h:panelGrid>
+                        </h:form>
+
+                    </div>
+                </div>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>
